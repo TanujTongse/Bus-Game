@@ -1,0 +1,43 @@
+body
+{
+	margin: 0;
+
+	overflow-y: hidden;
+}
+
+.night
+{
+	height: 80vh;
+	width: 70vw;
+	border: 1px solid black;
+	margin: 5rem auto;
+	background:url(./img/b1.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.surface
+{
+	height: 140px;
+	width: 500%;
+	display: block;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background-repeat: repeat-x;
+    animation: moveRight 12s linear infinite;
+}
+
+.bus
+{
+	position: absolute;
+	bottom: -6%;
+	left: 5%;
+}
+
+/*Animation*/
+
+@keyfreames moveright
+{
+	100%{transform:translateX(-2950px)}
+}
